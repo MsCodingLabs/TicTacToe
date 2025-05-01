@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <!-- Statusanzeige für Spielinfos (z. B. Spieler am Zug, Gewinner) -->
+      <div id="info">Spiel lädt...</div>
+      <!-- Spielfeld-Container mit ARIA-Label für Barrierefreiheit -->
+      <div
+        id="gameboard"
+        class="gameboard"
+        aria-label="Tic Tac Toe Spielbrett"
+      ></div>
+      <!-- Button zum Zurücksetzen des Spiels -->
+      <button id="reset">Neustart</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

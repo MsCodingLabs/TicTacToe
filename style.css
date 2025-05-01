@@ -1,0 +1,106 @@
+/* Grundstil für den Body: zentriert den Inhalt vertikal und horizontal */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Zentrierung des Inhalts im <main>-Element */
+main {
+  text-align: center;
+}
+
+/* Überschrift-Stil */
+h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Anzeige für Spielstatus (z. B. Spieler am Zug) */
+#info {
+  margin: 10px 0 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Spielfeld als 3x3 Raster */
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 0 auto 20px;
+}
+
+/* Einzelnes Spielfeld-Feld */
+.square {
+  background: #fff;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0;
+  position: relative;
+}
+
+/* Hover-Effekt für Spielfelder */
+.square:hover {
+  background: #f9f9f9;
+}
+
+/* Stil für Kreis und Kreuz-Grafiken */
+.circle,
+.cross {
+  width: 60%;
+  height: 60%;
+}
+
+/* Kreis-Stil (blauer Ring) */
+.circle {
+  border: 6px solid #0074d9;
+  border-radius: 50%;
+}
+
+/* Kreuz-Stil */
+.cross {
+  position: relative;
+}
+
+/* Rote Kreuzlinien (X) */
+.cross::before,
+.cross::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #ff4136;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Zweiter Balken für das X */
+.cross::after {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+/* Stil für den Neustart-Button */
+button#reset {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover-Farbe für den Button */
+button#reset:hover {
+  background-color: #005fa3;
+}
