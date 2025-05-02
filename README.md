@@ -5,7 +5,7 @@
 A simple and fun Tic-Tac-Toe game where two players take turns placing either "X" or "O" on a 3x3 grid. The first player to line up three matching symbols horizontally, vertically, or diagonally wins the game.
 
 ## Screenshot
-![ticTacToe.png](https://github.com/MsCodingLabs/quizze/blob/main/quizze.png)
+![ticTacToe.png](https://github.com/MsCodingLabs/TicTacToe/blob/main/ticTacToe.png)
 
 ## ✨ Features
 
